@@ -67,6 +67,11 @@ export default function App() {
       component: Settings,
       fields: settingsFields,
     },
+    {
+      label: "Last Tab",
+      component: () => <h1>Last Tab</h1>,
+      fields: [],
+    },
   ];
 
   const constructFormValues = () => {

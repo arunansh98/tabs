@@ -34,12 +34,18 @@
 .tab-body {
   padding: 2rem;
   height: 20vh;
+  overflow-y: overlay;
+  border: 1px solid black;
+  border-width: 0px;
+  border-bottom-width: 1px;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin: auto;
+  padding: 1rem;
 }
 
 .font-bold {

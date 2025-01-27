@@ -9,11 +9,23 @@ export default function RenderFields({ fields, tabIndex }) {
       {fields?.map((field, index) => {
         switch (field.type) {
           case "text":
-            return <Text key={index} field={field} tabIndex={tabIndex} />;
+            return (
+              <div>
+                <Text key={index} field={field} tabIndex={tabIndex} />
+              </div>
+            );
           case "number":
-            return <Number key={index} field={field} tabIndex={tabIndex} />;
+            return (
+              <div>
+                <Number key={index} field={field} tabIndex={tabIndex} />
+              </div>
+            );
           case "password":
-            return <Password key={index} field={field} tabIndex={tabIndex} />;
+            return (
+              <div>
+                <Password key={index} field={field} tabIndex={tabIndex} />
+              </div>
+            );
         }
       }) || "No fields present !"}
     </div>

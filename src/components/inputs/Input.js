@@ -10,7 +10,7 @@ export default function Input(props) {
     <div id="field">
       <label>{label}</label>
       <input
-        type
+        type={type}
         value={value}
         placeholder={placeholder}
         onChange={(event) =>

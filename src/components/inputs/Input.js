@@ -1,18 +1,18 @@
 import { useContext } from "react";
 import { Context } from "../../App";
 
-export default function Text(props) {
+export default function Input(props) {
   const { tabIndex, field } = props;
-  const { id, placeholder } = field;
+  const { id, placeholder, label, type } = field;
   const { state, dispatch } = useContext(Context);
   const value = state?.[tabIndex]?.[id];
   return (
     <div id="field">
-      <label>{field.label}</label>
+      <label>{label}</label>
       <input
-        type="text"
-        placeholder={placeholder}
+        type
         value={value}
+        placeholder={placeholder}
         onChange={(event) =>
           dispatch({
             type: "updateFieldValue",

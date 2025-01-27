@@ -1,6 +1,6 @@
-import Text from "./Text.js";
-import Password from "./Password.js";
-import Number from "./Number.js";
+import Text from "../../inputs/Text";
+import Password from "../../inputs/Password";
+import Number from "../../inputs/Number";
 import "./RenderFields.css";
 
 export default function RenderFields({ fields, tabIndex }) {

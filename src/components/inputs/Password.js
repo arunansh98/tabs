@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "../App";
+import { Context } from "../../App";
 
 export default function Text(props) {
   const { tabIndex, field } = props;

@@ -1,8 +1,8 @@
 import { useReducer, useState } from "react";
-import Tabs from "./components/Tabs";
-import Profile from "./components/Profile";
-import Interests from "./components/Interests";
-import Settings from "./components/Settings";
+import Tabs from "./components/views/Tabs/Tabs";
+import Profile from "./components/pages/Profile";
+import Interests from "./components/pages/Interests";
+import Settings from "./components/pages/Settings";
 
 import "./styles.css";
 import { createContext } from "react";

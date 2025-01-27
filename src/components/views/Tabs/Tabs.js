@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "../App";
+import { Context } from "../../../App";
 import "./Tabs.css";
 
 export default function Tabs(props) {

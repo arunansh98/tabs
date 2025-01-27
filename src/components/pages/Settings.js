@@ -1,4 +1,4 @@
-import RenderFields from "./RenderFields";
+import RenderFields from "../views/RenderFields/RenderFields";
 
 export default function Settings({ fields, tabIndex }) {
   return (
